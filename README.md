@@ -6,7 +6,7 @@ This project focuses on enhancing the realism of synthetic datasets for autonomo
 
 The following block diagram illustrates the core components of our pipeline:
 
-![Pipeline Diagram]([Assests/ECML workflow.png](https://github.com/IqraNosheen786/Enhancing-Synthetic-Data-Realism-Using-Segmentation-Guided-ControlNet/tree/main/Assests))
+![Pipeline Diagram]([Assests/ECML%20workflow.png](https://github.com/IqraNosheen786/Enhancing-Synthetic-Data-Realism-Using-Segmentation-Guided-ControlNet/tree/main/Assests))
 
 ### Pipeline Stages:
 1. **Input:** Synthetic image or segmentation map from VKITTI dataset
