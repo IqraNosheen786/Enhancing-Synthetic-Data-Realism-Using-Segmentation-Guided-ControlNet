@@ -8,16 +8,19 @@ The following block diagram illustrates the core components of our pipeline:
 
 ![Pipeline Diagram](Assests/ECML%20workflow.png)
 
-### Pipeline Stages:
-1. **Input:** Synthetic image or segmentation map from VKITTI dataset
-2. **ControlNet:** Segmentation maps, Canny edges, and text-prompt guided image refinement
-3. **Super-Resolution:** Upscaling and photorealistic enhancement
-4. **Output:** High-resolution, realistic image
+1. **Input:** Synthetic images, Canny edges, and segmentation map from VKITTI dataset
+2. **Finetuning Phase:** 
+   - Pre-trained **Dreamlike Photoreal Model 2.0**
+   - Text-guided prompts for photorealistic generation
+   - **Fine-tuned Stable Diffusion Model** for realistic image generation
+3. **Data Refinement Phase:**
+   - **Rendered dataset** using ControlNet
+   - Conditions: **Segmentation maps**, **Canny edges**, and **text-guided prompts**
+   - **Fine-tuned Model** for image refinement
+4. **Validation Phase:**
+   - **Downstream ML tasks**: Object Detection (YOLO v8), Depth Estimation
+   - **Refined Data** for validation and task performance
 
-## 🚀 LoRA-Fine-Tuned Stable Diffusion for Data Refinement
-In the second stage of our pipeline, we apply LoRA to fine-tune a Stable Diffusion model on the real-world KITTI dataset. This enables the model to adapt to the target domain with fewer images and less computational power while maintaining high-quality image generation.
-
-The model generates realistic, high-resolution synthetic images that preserve structural consistency, making them suitable for downstream tasks such as object detection and depth estimation.
 
 ## 🧪 Results Demonstration
 
