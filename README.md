@@ -8,15 +8,15 @@ The following block diagram illustrates the core components of our pipeline:
 
 ![Pipeline Diagram](Assests/ECML%20workflow.png)
 
-1. **Input:** Synthetic images, Canny edges, and segmentation map from VKITTI dataset
+1. **Input:** Real world Kitti dataset, Text-guided prommpts, Pre-trained stable diffusion model
 2. **Finetuning Phase:** 
    - Pre-trained **Dreamlike Photoreal Model 2.0**
    - Text-guided prompts for photorealistic generation
    - **Fine-tuned Stable Diffusion Model** for realistic image generation
 3. **Data Refinement Phase:**
-   - **Rendered dataset** using ControlNet
-   - Conditions: **Segmentation maps**, **Canny edges**, and **text-guided prompts**
-   - **Fine-tuned Model** for image refinement
+   - **Synthetic VKITTI dataset, and Fine-tuned Stable Diffusion Model**
+   - Conditions: **Segmentation maps**, **Canny edges**, **text-guided prompts**
+   - Refined images
 4. **Validation Phase:**
    - **Downstream ML tasks**: Object Detection (YOLO v8), Depth Estimation
    - **Refined Data** for validation and task performance
