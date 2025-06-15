@@ -23,7 +23,7 @@ The model generates realistic, high-resolution synthetic images that preserve st
 
 Below are sample outputs comparing the original synthetic images from VKITTI with their enhanced versions using segmentation-guided ControlNet:
 
-![input1](Assests/generatedL%20images.jpg) 
+![input1](Assests/generated%20images.jpg) 
 
 Additionally, we have uploaded high-resolution refined images for each weather condition from the VKITTI dataset for viewing purposes. [🔗 Click here to view more results](#).
 
