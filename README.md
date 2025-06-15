@@ -6,7 +6,7 @@ This project focuses on enhancing the realism of synthetic datasets for autonomo
 
 The following block diagram illustrates the core components of our pipeline:
 
-![Pipeline Diagram](path/to/pipeline_diagram.png)
+![Pipeline Diagram](Assests/ECML workflow.png)
 
 ### Pipeline Stages:
 1. **Input:** Synthetic image or segmentation map from VKITTI dataset
