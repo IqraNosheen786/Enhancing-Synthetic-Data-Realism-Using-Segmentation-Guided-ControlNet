@@ -37,7 +37,7 @@ Download or explore the ControlNet models used in this project:
 - [ControlNet Github Page](https://github.com/yourgithubusername/controlnet)
 - [ControlNet for Canny Edges](#)
 - [ControlNet for Depth Maps](#)
-- Custom Trained ControlNet (Coming Soon)
+- ![Custom Trained ControlNet](Assests/pytorch_lora_weights.safetensors)
 
 ## 📝 Key Contributions:
 - Fine-tuned Stable Diffusion on the KITTI dataset with LoRA to generate high-quality images.
