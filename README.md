@@ -28,7 +28,7 @@ Below are sample outputs comparing the original synthetic images from VKITTI wit
 
 ![input1](Assests/generated%20images.jpg) 
 
-Additionally, we have uploaded high-resolution refined images for each weather condition from the VKITTI dataset for viewing purposes. [🔗 Click here to view more results](#).
+Additionally, we have uploaded the fine-tuned Stable Diffusion model on the real-world KITTI dataset for public access. ![Finetuned stable diffusion model](Assests/pytorch_lora_weights.safetensors)
 
 ## 🔗 ControlNet Models
 
