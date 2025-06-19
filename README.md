@@ -34,9 +34,9 @@ Additionally, we have uploaded high-resolution refined images for each weather c
 
 Download or explore the ControlNet models used in this project:
 
-- [ControlNet Github Page](https://github.com/yourgithubusername/controlnet)
-- [ControlNet for Canny Edges](#)
-- [ControlNet for Depth Maps](#)
+- [ControlNet Github Page](https://github.com/lllyasviel/ControlNet)
+- [ControlNet For Canny Edges](https://github.com/lllyasviel/ControlNet)
+- [ControlNet for Segmentation Maps]([https://huggingface.co/lllyasviel/ControlNet-depth](https://huggingface.co/lllyasviel/sd-controlnet-seg))(#)
 - ![Custom Trained ControlNet](Assests/pytorch_lora_weights.safetensors)
 
 ## 📝 Key Contributions:
