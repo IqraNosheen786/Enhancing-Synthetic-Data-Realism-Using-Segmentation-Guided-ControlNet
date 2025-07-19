@@ -28,7 +28,8 @@ Below are sample outputs comparing the original synthetic images from VKITTI wit
 
 ![input1](Assests/generated%20images.jpg) 
 
-Additionally, we have uploaded the fine-tuned Stable Diffusion model on the real-world KITTI dataset for public access. [Finetuned stable diffusion model](Assests/pytorch_lora_weights.safetensors)
+Additionally, we have uploaded the fine-tuned Stable Diffusion model on the real-world KITTI dataset for public access. [Finetuned stable diffusion model](Assests/pytorch_lora_weights.safetensors) 
+Dataset: [VKITTI Dataset Access](https://nuigalwayie-my.sharepoint.com/:u:/g/personal/i_nosheen1_universityofgalway_ie/EQSBpXC6Ho9Lhkm4kr9NJ7kBVEgAtFZ_os08pOz46yTp8A?e=xywJ1T)
 
 ## 🔗 ControlNet Models
 
