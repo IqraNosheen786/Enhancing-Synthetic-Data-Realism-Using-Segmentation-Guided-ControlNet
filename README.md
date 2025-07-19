@@ -28,7 +28,7 @@ Below are sample outputs comparing the original synthetic images from VKITTI wit
 
 ![input1](Assests/generated%20images.jpg) 
 
-Additionally, we have uploaded the fine-tuned Stable Diffusion model on the real-world KITTI dataset for public access. ![Finetuned stable diffusion model](Assests/pytorch_lora_weights.safetensors)
+Additionally, we have uploaded the fine-tuned Stable Diffusion model on the real-world KITTI dataset for public access. [Finetuned stable diffusion model](Assests/pytorch_lora_weights.safetensors)
 
 ## 🔗 ControlNet Models
 
@@ -37,7 +37,6 @@ Download or explore the ControlNet models used in this project:
 - [ControlNet Github Page](https://github.com/lllyasviel/ControlNet)
 - [ControlNet For Canny Edges](https://github.com/lllyasviel/ControlNet)
 - [ControlNet for Segmentation Maps](https://huggingface.co/lllyasviel/sd-controlnet-seg)
-- ![Custom Trained ControlNet](Assests/pytorch_lora_weights.safetensors)
 
 ## 📝 Key Contributions:
 - Fine-tuned Stable Diffusion on the KITTI dataset with LoRA to generate high-quality images.
