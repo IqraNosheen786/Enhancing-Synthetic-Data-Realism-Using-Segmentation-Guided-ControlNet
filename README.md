@@ -1,6 +1,8 @@
 # Enhancing Synthetic Data Realism for Autonomous Vehicles Using Segmentation-Guided ControlNet
 
 **Iqra Nosheen, Cathy Ennis,Michael G. Madden.**
+
+
 This project focuses on enhancing the realism of synthetic datasets for autonomous vehicle applications. We integrate a segmentation-guided ControlNet with Stable Diffusion fine-tuned on the KITTI dataset to bridge the domain gap between synthetic and real-world data, improving the realism and usability of synthetic data for downstream tasks like object detection and depth estimation.
 
 ## 🔧 Pipeline Overview
