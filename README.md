@@ -24,16 +24,6 @@ The following block diagram illustrates the core components of our pipeline:
    - **Downstream ML tasks**: Object Detection (YOLO v8), Depth Estimation
    - **Refined Data** for validation and task performance
 
-## 🛠️ Getting Started: Training Instructions
-
-To set up your environment and begin training, follow the steps below.
-
-### 1. Install Dependencies
-
-Make sure your Python environment is activated. Then install the required packages:
-
-```bash
-pip install -r requirements.txt
 
 ## 🧪 Results Demonstration
 
