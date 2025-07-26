@@ -35,8 +35,9 @@ pip install -r requirements.txt
 '''
 ### 2. For Fine-tuning
 set the dataset path and configure hyper-parameters in the my_experiment.yaml file configs folder
+
 ```bash
-Python train.py
+python train.py
 '''
 ## 🧪 Results Demonstration
 
