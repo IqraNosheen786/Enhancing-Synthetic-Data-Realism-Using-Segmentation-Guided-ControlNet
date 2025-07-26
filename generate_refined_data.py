@@ -110,16 +110,6 @@ from annotator.midas import MidasDetector
 apply_midas = MidasDetector()
 default_neg_prompt = "abstract, cartoon, low resolution, unrealistic, fantasy elements, distorted perspective, blurry, overexposed, night scenes, extreme weather, futuristic vehicles, animals, flying objects, underwater, low-quality textures, unnatural colors, alien landscapes, incorrect proportions, fantasy characters, sci-fi buildings, otherworldly environments,long exposure, unnatural lighting, blur, distorted vehciles,blurry cars, out-of-focus vehicles, distorted vehicles, low-detail cars, low-resolution cars, incorrect road signs, abstract signs, low-detail signs, unrealistic road signs, distorted text on signs, cartoon grass, fake grass, unrealistic vegetation, overly bright grass, low-texture grass, artificial grass, 2D grass, heavy shadows, overly dark shadows, unnatural lighting, harsh shadows, extreme shadow contrast, underexposed, (semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, distorted vehicle, unnatural lightings), (deformed, distorted, disfigured:1.3, distorted vehciles), cartoon, low resolution, low quality, unrealistic, distorted perspective, abstract, night scenes, extreme weather, blurry, overexposed, futuristic vehicles, distorted vehicle,blurry cars, flying objects, underwater scenes, fantasy elements, alien landscapes, unrealistic vegetation, unrealistic road signs, scifi buildings, overly bright colors, artistic effects, long exposure, unnatural lighting, blur, distorted vehciles, half vehicle body, Do not change colors, maintain original colors, avoid color distortion, keep the color scheme of the input image."
 
-#'stabilityai/stable-diffusion-2',#'dreamlike-art/dreamlike-photoreal-2.0',#'digiplay/AbsoluteReality_v1.8.1',#'SG161222/Realistic_Vision_V2.0', #'dreamlike-art/dreamlike-photoreal-2.0',#,#'runwayml/stable-diffusion-v1-5',#"stabilityai/stable-diffusion-2-1",
-
-
-#'stabilityai/stable-diffusion-2',#'dreamlike-art/dreamlike-photoreal-2.0',#'digiplay/AbsoluteReality_v1.8.1',#'SG161222/Realistic_Vision_V2.0', #'dreamlike-art/dreamlike-photoreal-2.0',#,#'runwayml/stable-diffusion-v1-5',#"stabilityai/stable-diffusion-2-1",
-#"/users/iqra_n/diffusion/Kitti_Lora/ST_LORA/stable-diffusion-v1-5/my_experiment/pytorch_lora_weights.safetensors"
-#"/users/iqra_n/diffusion/Kitti_Lora/ST_LORA/stable-diffusion-2/my_experiment/pytorch_lora_weights.safetensors"
-#"/users/iqra_n/diffusion/Kitti_Lora/ST_LORA/Realistic_Vision_V2.0/my_experiment/pytorch_lora_weights.safetensors"
-#"/users/iqra_n/diffusion/Kitti_Lora/ST_LORA/dreamlike-photoreal-2.0_Model/my_experiment/pytorch_lora_weights.safetensors"
-#"/users/iqra_n/diffusion/Kitti_Lora/ST_LORA/AbsoluteReality_v1.8.1/my_experiment/pytorch_lora_weights.safetensors"
-##"/users/iqra_n/diffusion/Kitti_Lora/ST_LORA/output/my_experiment/pytorch_lora_weights.safetensors",
 def parse_args():
     parser = argparse.ArgumentParser(description="Sampling")
     parser.add_argument("--pretrained_unet_lora_path", type=str, default="/users/iqra_n/diffusion/Kitti_Lora/ST_LORA/AbsoluteReality_v1.8.1/my_experiment/pytorch_lora_weights.safetensors", help="The path of pretrained LoRA's state dict.")
@@ -248,13 +238,9 @@ def main(
         segmentation_map = HWC3(segmentation_map)
         #imageio.imwrite(output_segmentation_path, segmentation_map)
     
-    
-
     #imageio.imwrite(output_segmentation_path, (segmentation_map * 255).astype(np.uint8))  # Save segmentation map
     weight_dtype = torch.float16 if fp16 else torch.float32
     
-
-
     # Prepare control images
     #depth_control_image = torch.from_numpy(HWC3(depth_map).copy()).float() / 255.0
     segmentation_control_image = torch.from_numpy(HWC3(segmentation_map).copy()).float() / 255.0
@@ -272,9 +258,7 @@ def main(
         unet = UNet2DConditionModel.from_pretrained(pretrained_model_path, subfolder="unet",weights_only=True).to(device)
         unet.load_attn_procs(pretrained_unet_lora_path)
     except Exception as e:
-        print(f"Error loading UNet model: {e}")
-
-    
+        print(f"Error loading UNet model: {e}") 
 
     # Load UNet and set up LoRA and ControlNet
     #unet = UNet2DConditionModel.from_pretrained(pretrained_model_path, subfolder="unet",weights_only=True).to(device)
@@ -286,7 +270,6 @@ def main(
     # Convert the VAE to FP16 if fp16 is enabled
     if fp16:
         vae = vae.half()  # Cast the entire VAE model to FP16
-
     
     #controlnet_depth = ControlNetModel.from_pretrained(pretrained_controlnet_depth_path).to(device)
     controlnet_segmentation = ControlNetModel.from_pretrained(pretrained_controlnet_segmentation_path,weights_only=True).to(device)
@@ -295,8 +278,6 @@ def main(
     if enable_xformers_memory_efficient_attention and is_xformers_available():
         controlnet_canny.enable_xformers_memory_efficient_attention()
         controlnet_segmentation.enable_xformers_memory_efficient_attention()
-
-
 
     controlnets = [controlnet_canny.to(dtype=weight_dtype), controlnet_segmentation.to(dtype=weight_dtype)]
 
