@@ -26,7 +26,7 @@ The following block diagram illustrates the core components of our pipeline:
 ## 🛠️ Training Methodology: Fine-Tuning with LoRA and ControlNet
 For training, we followed the approach outlined in this [GitHub repository](https://github.com/lizhiqi49/I2I-Stable-Diffusion-Finetune-LoRA-ControlNet.git), which focuses on fine-tuning Stable Diffusion using LoRA (Low-Rank Adaptation) and ControlNet for few-shot image transfer.
 ### 1. For Fine-tuning
-#### Install Dependencies: Make sure your Python environment is activated. Then install the required packages, set the dataset path and configure hyper-parameters in the my_experiment.yaml file in the configs folder
+Install Dependencies: Make sure your Python environment is activated. Then install the required packages, set the dataset path and configure hyper-parameters in the my_experiment.yaml file in the configs folder
 
 ```bash
 pip install -r requirements.txt
