@@ -30,7 +30,7 @@ For training, we followed the approach outlined in this [GitHub repository](http
 
 ```bash
 pip install -r requirements.txt
-python train.py
+python train.py ```
 
 ### 🧪 Results Demonstration
 
