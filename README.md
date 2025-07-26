@@ -30,8 +30,7 @@ For training, we followed the approach outlined in this [GitHub repository](http
 
 ```bash
 pip install -r requirements.txt
-python train.py ```
-` ```bash ``` `.
+python train.py
 ### 🧪 Results Demonstration
 
 Below are sample outputs comparing the original synthetic images from VKITTI with their enhanced versions using segmentation-guided ControlNet:
