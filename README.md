@@ -39,7 +39,7 @@ set the dataset path and configure hyper-parameters in the my_experiment.yaml fi
 ```bash
 python train.py
 '''
-## 🧪 Results Demonstration
+### 🧪 Results Demonstration
 
 Below are sample outputs comparing the original synthetic images from VKITTI with their enhanced versions using segmentation-guided ControlNet:
 
