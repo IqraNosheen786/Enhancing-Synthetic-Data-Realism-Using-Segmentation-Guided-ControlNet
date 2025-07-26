@@ -32,7 +32,10 @@ pip install -r requirements.txt
 python train.py
 ````
 ### 2. For generating refined data
-set the path of f
+Set the path of your input dataset, segmentation maps, and fine-tuned models, and other configurations.
+````bash
+python generate_refined_data.py
+````
 ### 🧪 Results Demonstration
 
 Below are sample outputs comparing the original synthetic images from VKITTI with their enhanced versions using segmentation-guided ControlNet:
