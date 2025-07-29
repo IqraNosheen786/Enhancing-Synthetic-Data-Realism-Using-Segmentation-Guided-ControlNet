@@ -43,7 +43,7 @@ Below are sample outputs comparing the original synthetic images from VKITTI wit
 ![input1](Assests/generated%20images.jpg) 
 
 Additionally, we have uploaded the fine-tuned Stable Diffusion model on the real-world KITTI dataset for public access. [Finetuned stable diffusion model](Assests/pytorch_lora_weights.safetensors) 
-Dataset: [Refined Version of VKITTI Dataset Access]([https://nuigalwayie-my.sharepoint.com/:u:/g/personal/i_nosheen1_universityofgalway_ie/EQSBpXC6Ho9Lhkm4kr9NJ7kBVEgAtFZ_os08pOz46yTp8A?e=xywJ1T](https://zenodo.org/records/16451126?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImNlYTFjZTJjLTA4OTMtNGM0Ni05ZThiLWFiYjg0MTNmNzBlZCIsImRhdGEiOnt9LCJyYW5kb20iOiJiODU3NzJjZDdhNmIyNGJlNGQ5Y2FiNGM2ODhkYjZiZSJ9.RttlBt4uCNWYVlNkgafMmbIqbzOrqE94EvehTDfzCJLXz-PfDkJhQ48QZWCEYc-dX8BhzyLOHwkOVUlQLvIH0A))
+Dataset: [Refined Version of VKITTI Dataset Access](https://zenodo.org/records/16451126?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImNlYTFjZTJjLTA4OTMtNGM0Ni05ZThiLWFiYjg0MTNmNzBlZCIsImRhdGEiOnt9LCJyYW5kb20iOiJiODU3NzJjZDdhNmIyNGJlNGQ5Y2FiNGM2ODhkYjZiZSJ9.RttlBt4uCNWYVlNkgafMmbIqbzOrqE94EvehTDfzCJLXz-PfDkJhQ48QZWCEYc-dX8BhzyLOHwkOVUlQLvIH0A)
 
 ## 🔗 ControlNet Models
 
