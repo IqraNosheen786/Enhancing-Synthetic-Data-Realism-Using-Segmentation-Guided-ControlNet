@@ -77,7 +77,7 @@ Using a U-Net-based model, the refined VKITTI dataset led to a decrease in RMSE 
 | Refined VKITTI  | 0.2226 |
 
 ## Citation
-If you use this code for your research, please cite our papers.
+If you use this code or dataset for your research, please cite our papers.
 
 ## About
 No description, website, or topics provided.
